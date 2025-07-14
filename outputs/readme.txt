@@ -1,2 +1,2 @@
-tests for the pipeline for deff l bins theat have the same z
+tests for the pipeline for bins (deff l, same z)
   
