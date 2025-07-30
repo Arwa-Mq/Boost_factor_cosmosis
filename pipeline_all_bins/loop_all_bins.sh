@@ -2,7 +2,7 @@
 
 data_path="/global/cfs/cdirs/des/jesteves/data/boost_factor/y1/profiles"
 template="bf_all_bins.ini"
-output_dir="/global/homes/a/arwa_mq/DESy3/Boost_Factor/config/bf_all_bins/outputs_all_bins"
+output_dir="/global/homes/a/arwa_mq/DESy3/Boost_factor_cosmosis/pipeline_all_bins/outputs_all_bins"
 
 for l in 0 1 2 3; do
   for z in 0 1 2; do
@@ -12,7 +12,7 @@ for l in 0 1 2 3; do
     cat <<EOL >> $config
 
 [boost_factor_likelihood]
-file = /global/homes/a/arwa_mq/DESy3/Boost_Factor/config/bf_all_bins/bf_all_like.py
+file = /global/homes/a/arwa_mq/DESy3/Boost_factor_cosmosis/pipeline_all_bins/bf_all_like.py
 data_path = $data_path
 richness_bin = $l
 redshift_bin = $z
@@ -23,7 +23,7 @@ format = text
 EOL
 
     echo "Running Cosmosis for l=$l, z=$z..."
-    cosmosis $config
+    cosmosis $config >& log_all&
 
   done
 done
