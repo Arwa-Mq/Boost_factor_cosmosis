@@ -20,8 +20,9 @@ def setup(options):
     # Reading data file:
     # DO: change l and z according to which data file you are using
     path = "/Users/arwa.q/Documents/GitHub/Boost_factor_cosmosis/data/y3_data/fcl_posteriors_zl_subsample"
-    R, data_vector = np.genfromtxt(path + "/fcl_z0_l0.txt".format(l=0, z=0), 
-        unpack=True)
+    
+    data_vector= np.loadtxt("fcl_z0_l0_r0.txt")
+    R = np.logspace(-1, 2, 200)
     variance = np.ones(R.size)*0.1**2
     sigma_B = data_vector*np.random.normal(loc=0, scale=variance**(1/2), size=R.size)
     covariance = np.ones(R.size)*0.1**2
