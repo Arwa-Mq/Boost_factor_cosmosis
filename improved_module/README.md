@@ -21,12 +21,6 @@ This folder contains the improved boost factor likelihood code for DES Year 1 da
 - **Data format**: Boost factor B(R) with covariance matrix
 - **Radial points**: 8 (default)
 
-## Key Improvements
-
-1. **Multi-bin automation** - Automatically discovers and processes all l/z bins
-2. **Clean model** - Proper handling of x=1 singularity
-3. **Standalone testing** - Works without CosmoSIS installed
-
 ## Usage
 
 ### Testing locally (without CosmoSIS):
@@ -52,12 +46,6 @@ log_L, chi2, model = compute_likelihood_standalone(
 ```bash
 cosmosis bf_pipeline_improved.ini
 ```
-
-## Key Equations
-
-- Boost factor model: `B(R) = 1 + b0 * (1 - f(x)) / (x^2 - 1)` where `x = R/rs`
-- Parameters: `rs` (scale radius), `b0` (amplitude)
-- At x=1: `B = (b0 + 3) / 3` (analytic limit)
 
 ## Data Files (Y1)
 
