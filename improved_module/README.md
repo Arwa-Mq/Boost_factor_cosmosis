@@ -13,14 +13,6 @@ This folder contains the improved boost factor likelihood code for DES Year 1 da
 | `bf_values_all_bins.ini` | Parameter priors for all 12 bins |
 | `test_bf_likelihood.ipynb` | Jupyter notebook to test the module |
 
-## DES Y1 Data Structure
-
-- **4 richness bins**: l = 0, 1, 2, 3
-- **3 redshift bins**: z = 0, 1, 2
-- **Total**: 12 bins
-- **Data format**: Boost factor B(R) with covariance matrix
-- **Radial points**: 8 (default)
-
 ## Usage
 
 ### Testing locally (without CosmoSIS):
