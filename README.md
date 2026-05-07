@@ -35,12 +35,6 @@ data_path = /your/path/to/y1/profiles
 cosmosis bf_pipeline_improved.ini
 ```
 
-## DES Y1 Data
-
-- **Bins**: 4 richness (l=0-3) x 3 redshift (z=0-2) = 12 bins
-- **Data format**: Boost factor B(R) with covariance matrix
-- **Radial points**: 8 per bin
-
 ## Model
 
 The boost factor model is:
