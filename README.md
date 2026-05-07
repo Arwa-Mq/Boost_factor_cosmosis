@@ -53,9 +53,3 @@ where `x = R / rs`, and parameters are:
 - `rs`: scale radius
 - `b0`: amplitude
 
-## Legacy Code
-
-The original single-bin code is still available in the root directory:
-- `bf_likelihood.py` - Original Y1 likelihood
-- `bf_likelihood_y3.py` - Y3 version
-- `boostf_per_bin.ini` - Original pipeline config
